@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center_horizontal"
+        android:text="设置输出画面"
+        android:textSize="18sp"/>
+    <!--
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:text="输入板子id,输出口id,起始位置和宽高:"
+        android:textSize="18sp"/>
+    -->
+    <!--
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="输入源:            "
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/chooseInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:paddingBottom="10dp"
+            android:gravity="right"
+            android:text="选择输入源"
+            android:textSize="16sp"/>
+
+
+    </LinearLayout>
+    -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="左"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/left"
+            style="@android:style/Widget.DeviceDefault.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:width="75dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="0"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="上"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/top"
+            style="@android:style/Widget.DeviceDefault.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:width="75dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="0"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="宽"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/width"
+            style="@android:style/Widget.DeviceDefault.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:width="75dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="1920"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="高"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/height"
+            style="@android:style/Widget.DeviceDefault.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:width="75dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="1080"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:paddingBottom="10dp"
+            android:text="添加"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/pre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:paddingBottom="10dp"
+            android:gravity="center_horizontal"
+            android:text="上一步"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/finish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:paddingBottom="10dp"
+            android:gravity="right"
+            android:text="完成"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/lcView"
+        android:layout_width="500px"
+        android:layout_height="281px"
+        android:gravity="center_horizontal"
+        android:background="#C0C0C0">
+    </ImageView>
+    <!--
+    <Button
+        android:id="@+id/pre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:paddingTop="10dp"
+        android:text="上一步"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:paddingTop="10dp"
+        android:text="完成"
+        android:textSize="20sp"/>
+    -->
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="false"/>
+
+</LinearLayout>
+

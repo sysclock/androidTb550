@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Sun Apr 29 11:03:36 CST 2018
+0.baseType=DIRECTORY
+0.base=D\:\\bluetooth\\Tbc_2\\Tbc\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.path=classes.dex
+0.set=DEX
+count=1

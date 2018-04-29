@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <!--<Button-->
+        <!--android:id="@+id/guide"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:text="设备向导设置"-->
+        <!--android:onClick="onClick"-->
+        <!--android:textSize="24sp"/>-->
+
+    <Button
+        android:id="@+id/button_operating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="操作"
+        android:onClick="onClick"
+        android:textSize="24sp"
+        />
+
+    <Button
+        android:id="@+id/read_statius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="状态读取"
+        android:onClick="onClick"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/bigScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="设置"
+        android:onClick="onClick"
+        android:textSize="24sp"/>
+
+
+
+    <!--<Button-->
+        <!--android:id="@+id/imageset"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:text="显示画面设置"-->
+        <!--android:onClick="onClick"-->
+        <!--android:textSize="24sp"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/advanst"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:text="设置"-->
+        <!--android:onClick="onClick"-->
+        <!--android:textSize="24sp"/>-->
+
+    <!--
+    <Button
+        android:id="@+id/system"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="系统功能设置"
+        android:onClick="onClick"
+        android:textSize="24sp"/>
+        -->
+
+</LinearLayout>
+

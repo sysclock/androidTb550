@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center_horizontal"
+        android:text="设置大屏拼接和输入像素"
+        android:textSize="24sp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="行数（1-4)"
+            android:textSize="16sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="4"
+            android:width="75dp"
+            android:ems="10"
+            android:id="@+id/rows"
+            style="@android:style/Widget.DeviceDefault.EditText" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="列数(1-4)"
+            android:textSize="16sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="1"
+            android:width="75dp"
+            android:ems="10"
+            android:id="@+id/cols"
+            style="@android:style/Widget.DeviceDefault.EditText" />
+
+    </LinearLayout>
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="0,1,2" >
+
+
+        <TableRow android:background="#00ff00" android:layout_margin="2dip">
+
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:background="#4ca1c2" android:id="@+id/item00">
+                <LinearLayout android:orientation="horizontal"   android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="宽:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/w00"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal"  android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="高:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/h00"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:background="#2d82a3" android:id="@+id/item10">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="宽:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/w10"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="高:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/h10"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:background="#4ca1c2" android:id="@+id/item20">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="宽:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/w20"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="高:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/h20"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:background="#2d82a3" android:id="@+id/item30">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="宽:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/w30"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="高:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/h30"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </TableRow>
+
+
+        <!-- 2 line -->
+
+        <TableRow android:background="#00ff00" android:layout_margin="2dip">
+
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:background="#2d82a3" android:id="@+id/item01">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="宽:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/w01"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="高:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/h01"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:background="#4ca1c2" android:id="@+id/item11">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="宽:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/w11"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="高:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/h11"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:background="#2d82a3" android:id="@+id/item21">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="宽:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/w21"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="高:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/h21"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:background="#4ca1c2" android:id="@+id/item31">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="宽:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/w31"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="高:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/h31"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </TableRow>
+
+        <!-- 3 line -->
+
+        <TableRow android:background="#00ff00" android:layout_margin="2dip">
+
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:background="#4ca1c2" android:id="@+id/item02">
+                <LinearLayout android:orientation="horizontal"   android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="宽:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/w02"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal"  android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="高:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/h02"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:background="#2d82a3" android:id="@+id/item12">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="宽:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/w12"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="高:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/h12"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:background="#4ca1c2" android:id="@+id/item22">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="宽:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/w22"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="高:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/h22"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:background="#2d82a3" android:id="@+id/item32">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="宽:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/w32"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="高:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/h32"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </TableRow>
+
+
+        <!-- 4 line -->
+
+        <TableRow android:background="#00ff00" android:layout_margin="2dip">
+
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:background="#2d82a3" android:id="@+id/item03">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="宽:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/w03"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="高:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/h03"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:background="#4ca1c2" android:id="@+id/item13">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="宽:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/w13"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="高:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/h13"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:background="#2d82a3" android:id="@+id/item23">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="宽:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/w23"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="高:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/h23"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:background="#4ca1c2" android:id="@+id/item33">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="宽:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/w33"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp">
+
+                    <TextView android:text="高:" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:width="64dp"
+                        android:ems="10"
+                        android:id="@+id/h33"
+                        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </TableRow>
+
+
+    </TableLayout>
+
+    <!-- 4 line end -->
+
+
+    <Button
+        android:id="@+id/pre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="上一步"
+        android:onClick="onClick"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="下一步"
+        android:onClick="onClick"
+        android:textSize="20sp"/>
+
+
+</LinearLayout>
+

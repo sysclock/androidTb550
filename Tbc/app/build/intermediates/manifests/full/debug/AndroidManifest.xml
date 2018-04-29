@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tbc"
+    android:versionCode="2"
+    android:versionName="1.1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="22" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/logo"
+        android:label="TB_720"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.hmsoft.bluetooth.le.DeviceScanActivity"
+            android:label="TB_720"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hmsoft.bluetooth.le.DeviceControlActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.hmsoft.bluetooth.le.BluetoothLeService"
+            android:enabled="true" />
+        <service android:name="com.example.tbc.bluetooth.BluetoothDataService" >
+            <intent-filter>
+                <action android:name="com.example.tbc.bluetooth.BluetoothDataService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.example.tbc.bluetooth.BluetoothDiscoveryActivity"
+            android:label="TB_720" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.example.tbc.xxbluetooth.BluetoothControlAcitvity"
+            android:configChanges="orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!--  -->
+        <activity
+            android:name="com.example.tbc.menu.MenuItemListActivity"
+            android:label="TB_720" >
+
+            <!--  -->
+        </activity>
+
+        <!-- setting -->
+
+        <activity android:name="com.example.tbc.setting.SettingHomeActivity" />
+        <activity android:name="com.example.tbc.setting.SettingGuide1Activity" />
+        <activity android:name="com.example.tbc.setting.SettingGuide2Activity" />
+        <activity android:name="com.example.tbc.setting.SettingGuide3Activity" />
+        <activity android:name="com.example.tbc.setting.system.SettingSystemActivity" />
+        <activity android:name="com.example.tbc.setting.system.SettingSystemUpgradeActivity" />
+        <activity android:name="com.example.tbc.setting.system.SettingSystemFactoryActivity" />
+        <activity android:name="com.example.tbc.setting.system.SettingSystemSetPassActivity" />
+        <activity android:name="com.example.tbc.setting.SettingTimerPlanActivity" />
+        <activity android:name="com.example.tbc.setting.SettingHotBakActivity" />
+        <activity android:name="com.example.tbc.setting.SettingInsertListActivity" />
+        <activity android:name="com.example.tbc.setting.SettingColorTestActivity" />
+        <activity android:name="com.example.tbc.setting.SettingLogActivity" />
+        <activity android:name="com.example.tbc.setting.SettingAdvanstActivity" />
+        <activity android:name="com.example.tbc.setting.SettingBigScreen" />
+        <activity android:name="com.example.tbc.setting.SettingImages" />
+        <activity android:name="com.example.tbc.setting.SettingDebugActivity" />
+        <activity android:name="com.example.tbc.setting.SettingTrialVersion" />
+        <activity android:name="com.example.tbc.setting.SettingLogItem" />
+
+        <!-- bluetooth -->
+        <activity android:name="com.example.tbc.bluetooth.BluetoothSchemeActivity" />
+
+        <!-- videoout -->
+        <activity android:name="com.example.tbc.page.videoout.PageVideoOutResolution" />
+        <activity android:name="com.example.tbc.page.videoout.PageVideoOutFrameRate" />
+        <activity android:name="com.example.tbc.page.videoout.PageVideoOutInfo" />
+
+        <!-- sound -->
+        <activity android:name="com.example.tbc.page.sound.PageSoundGetVolume" />
+        <activity android:name="com.example.tbc.page.sound.PageSoundSetVolume" />
+
+        <!-- display -->
+        <activity android:name="com.example.tbc.page.display.PageDisplayContrast" />
+        <activity android:name="com.example.tbc.page.display.PageDisplaySaturation" />
+        <activity android:name="com.example.tbc.page.display.PageDisplayShaprness" />
+        <activity android:name="com.example.tbc.page.display.PageDisplayInfo" />
+
+        <!-- osd -->
+        <activity android:name="com.example.tbc.page.osd.PageOsdKey" />
+        <activity android:name="com.example.tbc.page.osd.PageOsdPlay" />
+
+        <!-- led -->
+        <activity android:name="com.example.tbc.page.led.PageLedGetResolution" />
+        <activity android:name="com.example.tbc.page.led.PageLedSetResolution" />
+
+        <!-- system -->
+        <activity android:name="com.example.tbc.page.system.PageSystemFactory" />
+        <activity android:name="com.example.tbc.page.system.PageSystemReboot" />
+        <activity android:name="com.example.tbc.page.system.PageSystemUpgrade" />
+        <activity android:name="com.example.tbc.page.system.PageSystemSetHeartbeat" />
+    </application>
+
+</manifest>

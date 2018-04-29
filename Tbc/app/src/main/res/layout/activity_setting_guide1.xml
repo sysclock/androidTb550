@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center_horizontal"
+        android:text="设置大屏总点数"
+        android:textSize="24sp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="宽"
+            android:textSize="16sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="1920"
+            android:width="75dp"
+            android:ems="10"
+            android:id="@+id/width"
+            style="@android:style/Widget.DeviceDefault.EditText" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="高"
+            android:textSize="16sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="1080"
+            android:width="75dp"
+            android:ems="10"
+            android:id="@+id/height"
+            style="@android:style/Widget.DeviceDefault.EditText" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="方案名称(5个汉子,15个字母以内):"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="scheme1"
+        android:width="75dp"
+        android:ems="10"
+        android:id="@+id/name"
+        style="@android:style/Widget.DeviceDefault.EditText" />
+
+
+    <Button
+        android:id="@+id/pre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="返回设置界面"
+        android:onClick="onClick"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="下一步"
+        android:onClick="onClick"
+        android:textSize="20sp"/>
+
+
+
+
+</LinearLayout>
+

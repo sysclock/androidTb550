@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center_horizontal"
+        android:text="视频输出帧率设置"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="输出源选择"
+        android:textSize="16sp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp">
+
+            <RadioGroup
+                android:id="@+id/radioGroupSource"
+                android:contentDescription="设置源选择"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:text="VGA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButtonVGA"
+                    android:layout_weight="1"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:text="DVI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButtonDVI"
+                    android:layout_weight="1" />
+            </RadioGroup>
+        </LinearLayout>
+
+    <!--
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="自定义分辨率：   宽"
+            android:textSize="16sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="1920"
+            android:width="75dp"
+            android:ems="10"
+            android:id="@+id/editTextWidth"
+            style="@android:style/Widget.DeviceDefault.EditText" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="高"
+            android:textSize="16sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="1080"
+            android:width="75dp"
+            android:ems="10"
+            android:id="@+id/editTextHeight"
+            style="@android:style/Widget.DeviceDefault.EditText" />
+
+    </LinearLayout>
+    -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="帧率选择"
+        android:textSize="16sp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupFrameRate"
+        android:contentDescription="帧率选择"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+        <RadioButton
+            android:text="60"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:checked="true"
+            android:id="@+id/radioButton1"/>
+        <RadioButton
+            android:text="50"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/radioButton2"/>
+        <RadioButton
+            android:text="30"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/radioButton3"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="设置"
+        android:textSize="24sp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp">
+
+        <TextView
+            android:id="@+id/resp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

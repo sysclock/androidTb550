@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center_horizontal"
+        android:text="播放控制"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/key1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="开始/暂停"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/key2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="停止"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/key3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="会进"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/key4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="快退"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/key5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="上一曲"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/key6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="下一曲"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/key7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="返回"
+        android:textSize="24sp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="获取结果："
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/resp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

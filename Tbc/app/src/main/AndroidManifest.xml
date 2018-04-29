@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tbc"
+    android:versionCode="2"
+    android:versionName="1.1.1">
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="20" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="TB_720"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.hmsoft.bluetooth.le.DeviceScanActivity"
+            android:label="TB_720"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hmsoft.bluetooth.le.DeviceControlActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.hmsoft.bluetooth.le.BluetoothLeService"
+            android:enabled="true" />
+        <service android:name=".bluetooth.BluetoothDataService">
+            <intent-filter>
+                <action android:name="com.example.tbc.bluetooth.BluetoothDataService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".bluetooth.BluetoothDiscoveryActivity"
+            android:label="TB_720">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".xxbluetooth.BluetoothControlAcitvity"
+            android:configChanges="orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!--  -->
+        <activity
+            android:name=".menu.MenuItemListActivity"
+            android:label="TB_720">
+
+            <!--  -->
+        </activity>
+
+        <!-- setting -->
+
+        <activity android:name=".setting.SettingHomeActivity" />
+        <activity android:name=".setting.SettingGuide1Activity" />
+        <activity android:name=".setting.SettingGuide2Activity" />
+        <activity android:name=".setting.SettingGuide3Activity" />
+        <activity android:name=".setting.system.SettingSystemActivity" />
+        <activity android:name=".setting.system.SettingSystemUpgradeActivity" />
+        <activity android:name=".setting.system.SettingSystemFactoryActivity" />
+        <activity android:name=".setting.system.SettingSystemSetPassActivity" />
+        <activity android:name=".setting.SettingTimerPlanActivity" />
+        <activity android:name=".setting.SettingHotBakActivity" />
+        <activity android:name=".setting.SettingInsertListActivity" />
+        <activity android:name=".setting.SettingColorTestActivity" />
+        <activity android:name=".setting.SettingLogActivity" />
+        <activity android:name=".setting.SettingAdvanstActivity" />
+        <activity android:name=".setting.SettingBigScreen" />
+        <activity android:name=".setting.SettingImages" />
+        <activity android:name=".setting.SettingDebugActivity" />
+        <activity android:name=".setting.SettingTrialVersion" />
+        <activity android:name=".setting.SettingLogItem" />
+
+        <!-- bluetooth -->
+        <activity android:name=".bluetooth.BluetoothSchemeActivity" />
+
+        <!-- videoout -->
+        <activity android:name=".page.videoout.PageVideoOutResolution" />
+        <activity android:name=".page.videoout.PageVideoOutFrameRate" />
+        <activity android:name=".page.videoout.PageVideoOutInfo" />
+
+        <!-- sound -->
+        <activity android:name=".page.sound.PageSoundGetVolume" />
+        <activity android:name=".page.sound.PageSoundSetVolume" />
+
+        <!-- display -->
+        <activity android:name=".page.display.PageDisplayContrast" />
+        <activity android:name=".page.display.PageDisplaySaturation" />
+        <activity android:name=".page.display.PageDisplayShaprness" />
+        <activity android:name=".page.display.PageDisplayInfo" />
+
+        <!-- osd -->
+        <activity android:name=".page.osd.PageOsdKey" />
+        <activity android:name=".page.osd.PageOsdPlay" />
+
+        <!-- led -->
+        <activity android:name=".page.led.PageLedGetResolution" />
+        <activity android:name=".page.led.PageLedSetResolution" />
+
+        <!-- system -->
+        <activity android:name=".page.system.PageSystemFactory" />
+        <activity android:name=".page.system.PageSystemReboot" />
+        <activity android:name=".page.system.PageSystemUpgrade" />
+        <activity android:name=".page.system.PageSystemSetHeartbeat" />
+    </application>
+
+</manifest>

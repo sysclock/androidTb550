@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <!--<Button-->
+        <!--android:id="@+id/timerPlan"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:text="定时切换"-->
+        <!--android:onClick="onClick"-->
+        <!--android:textSize="20sp"/>-->
+    <!--<Button-->
+        <!--android:id="@+id/hotbak"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:text="输入备份"-->
+        <!--android:onClick="onClick"-->
+        <!--android:textSize="20sp"/>-->
+    <!--<Button-->
+        <!--android:id="@+id/insertList"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:text="优先插播"-->
+        <!--android:onClick="onClick"-->
+        <!--android:textSize="20sp"/>-->
+    <Button
+        android:id="@+id/colorTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="图卡测试"
+        android:onClick="onClick"
+        android:textSize="20sp"/>
+    <!--
+    <Button
+        android:id="@+id/log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="Log查看"
+        android:onClick="onClick"
+        android:textSize="20sp"/>
+        -->
+    <Button
+        android:id="@+id/passwordSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="密码设置"
+        android:onClick="onClick"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/upgrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="系统升级"
+        android:onClick="onClick"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/factory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="出厂设置"
+        android:onClick="onClick"
+        android:textSize="20sp"
+        android:visibility="gone"/>　　<!--　功能屏蔽隐藏中-->
+
+    <Button
+        android:id="@+id/debugCmd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="调试命令"
+        android:onClick="onClick"
+        android:textSize="20sp"/>
+
+</LinearLayout>
+

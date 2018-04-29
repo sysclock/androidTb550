@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="图卡测试"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="红色"
+            android:textSize="16sp"/>
+
+        <SeekBar
+
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:max="255"
+            android:progress="255"
+
+            android:id="@+id/seekBarRed"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="绿色"
+            android:textSize="16sp"/>
+
+        <SeekBar
+
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:max="255"
+            android:progress="0"
+            android:id="@+id/seekBarGreen"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="蓝色"
+            android:textSize="16sp"/>
+
+        <SeekBar
+
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:max="255"
+            android:progress="0"
+            android:id="@+id/seekBarBlue"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp">
+
+        <TextView
+            android:id="@+id/colorValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0xFFFFFF"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="提交"
+
+            android:textSize="16sp"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/android:list"/>
+
+
+</LinearLayout>
+
